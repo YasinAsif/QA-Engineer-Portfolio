@@ -387,7 +387,7 @@ From my week 1 reflections:
 - **Black Box Testing:** No code knowledge, focus on inputs/outputs.
 - **White Box:** Code-level insight.
 - **Grey Box:** Mix of both.
-- **Ad-hoc Testing:** Informal, no plan—great for quick checks.
+- **Ad-hoc Testing:** Informal, no plan great for quick checks.
 
 ---
 
