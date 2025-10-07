@@ -292,7 +292,7 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 
 ## 💡 Portfolio Philosophy
 
-> "This portfolio isn't just about showcasing projects—it's proof of consistent learning, problem-solving ability, and commitment to quality. Every commit tells a story of growth."
+> "This portfolio isn't just about showcasing projects it's proof of consistent learning, problem-solving ability, and commitment to quality. Every commit tells a story of growth."
 
 ---
 
