@@ -1,374 +1,400 @@
-# SDLC & STLC Study Notes - Week 1
+# QA Portfolio: SDLC & STLC Study Notes - Week 1
+**Author:** Muhammad Yasin Asif  
+**Role:** QA Engineer (In Training)  
+**Part of:** Week 1 – Manual Testing Portfolio  
+**Date:** October 8, 2025
 
-## 📚 Software Development Life Cycle (SDLC)
+## Introduction
 
-### Definition
-SDLC is a systematic process for building software through multiple phases from planning to deployment and maintenance.
+These notes capture my key takeaways from studying the Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC) during my first week of QA training. I've compiled this as a quick reference guide, drawing from various resources like textbooks, online tutorials, and practical examples I've encountered. The goal is to understand how software is built and tested in a structured way, emphasizing best practices that prevent issues down the line. I've added some real-world insights from my initial explorations to make it more relatable testing isn't just theory; it's about catching problems early to save time and headaches later.
 
-### SDLC Models
+---
+
+## Software Development Life Cycle (SDLC)
+
+### What is SDLC?
+SDLC is essentially the roadmap for creating software. It's a structured approach that guides teams from the initial idea to a fully functional product and beyond. Think of it as building a house: you don't start hammering nails without a blueprint. SDLC ensures everyone from developers to stakeholders is on the same page, reducing risks and improving quality. In my experience so far, skipping phases here can lead to costly rework, which is why models like these are crucial.
+
+### Common SDLC Models
+
+I've focused on three popular models here, but there are others like Spiral or Iterative. Each has its place depending on project size, team dynamics, and how much flexibility you need.
 
 #### 1. Waterfall Model
+This is the classic, linear approach where each phase flows into the next like a waterfall. No overlaps, which makes it straightforward but rigid.
+
 ```
-Requirements → Design → Development → Testing → Deployment → Maintenance
+Requirements → Design → Implementation → Verification → Deployment → Maintenance
 ```
-**When to use:** Projects with clear, unchanging requirements
+
+**When to Use It:** Ideal for small projects with well-defined requirements that aren't likely to change, like a simple internal tool or regulatory-compliant software where documentation is key.
 
 **Pros:**
-- Simple and easy to understand
-- Clear phases and milestones
-- Good documentation
+- Easy to manage and understand, especially for beginners like me.
+- Clear timelines and milestones make progress tracking simple.
+- Heavy emphasis on documentation, which helps in audits or handovers.
 
 **Cons:**
-- No going back to previous phase
-- Testing happens late
-- Not suitable for complex projects
+- Inflexible if requirements change mid-way, you're stuck going back, which delays everything.
+- Testing comes late, so bugs found at the end can be expensive to fix.
+- Not great for complex, evolving projects like modern web apps with user feedback loops.
+
+**Real-World Example:** Developing a basic banking report generator where specs are fixed by compliance rules. I read about a case where a team used Waterfall for a government project, but scope creep turned it into a nightmare—lesson learned: assess change likelihood first.
 
 ---
 
 #### 2. Agile Model
+Agile is all about iteration and adaptability. It's like cooking a meal: taste as you go and adjust seasonings. Work happens in short "sprints" (usually 2-4 weeks), with constant feedback.
+
 ```
 Plan → Design → Develop → Test → Review → Deploy
               ↑________________________↓
-                  (Iterative Sprints)
+                  (Repeat in Sprints with Feedback)
 ```
 
-**When to use:** Projects with changing requirements
+**When to Use It:** Perfect for dynamic environments, like startups or apps where user needs evolve, such as e-commerce platforms or mobile games.
 
 **Pros:**
-- Flexible to changes
-- Continuous testing
-- Faster delivery
+- Highly flexible, embrace changes without derailing the project.
+- Testing is integrated throughout, catching issues early.
+- Faster time-to-market with incremental releases; users get value sooner.
 
 **Cons:**
-- Less predictable
-- Requires active customer involvement
+- Can feel chaotic without strong team discipline; outcomes are less predictable.
+- Requires constant client involvement, which isn't always feasible.
+- Documentation might be lighter, leading to knowledge gaps if team members leave.
+
+**Real-World Example:** Think of how Spotify develops features they release MVPs (Minimum Viable Products), gather user data, and iterate. From what I've learned, Agile helped Netflix pivot quickly during streaming booms, but it demands mature teams to avoid "scope sprawl."
+
+**Additional Insight:** Agile often uses frameworks like Scrum (with roles like Product Owner, Scrum Master) or Kanban (visual boards for workflow). In practice, hybrid models blending Agile with Waterfall are common for larger enterprises.
 
 ---
 
-#### 3. V-Model (Verification & Validation)
+#### 3. V-Model (Verification and Validation Model)
+This extends Waterfall by pairing development phases with corresponding testing phases, forming a "V" shape. It's verification (did we build it right?) on the left and validation (does it meet needs?) on the right.
+
 ```
 Requirements ←→ Acceptance Testing
-Design ←→ System Testing
+   Design ←→ System Testing
 Architecture ←→ Integration Testing
 Module Design ←→ Unit Testing
          ↓
       Coding
 ```
 
-**When to use:** Projects where testing is critical
+**When to Use It:** High-stakes projects where quality is non-negotiable, like medical software or aerospace systems. Testing is planned from day one.
 
-**Key Point:** Testing is planned in parallel with development!
+**Pros:**
+- Early defect detection since testing aligns with each dev phase.
+- Strong focus on requirements traceability.
+- Comprehensive documentation and structured approach.
+
+**Cons:**
+- Still somewhat rigid; changes are tough mid-process.
+- Time consuming upfront planning.
+- Not as adaptive as Agile for volatile requirements.
+
+**Real-World Example:** In automotive software for safety features, V-Model ensures every design element is verified and validated. I came across a study where it reduced post-release bugs by 40% in embedded systems, but it can extend timelines.
+
+**Key Point:** Unlike Waterfall, testing isn't an afterthought—it's parallel, which aligns well with STLC principles.
 
 ---
 
-## 🧪 Software Testing Life Cycle (STLC)
+## Software Testing Life Cycle (STLC)
 
-### Definition
-STLC is a sequence of specific activities conducted during the testing process to ensure software quality.
+### What is STLC?
+STLC is the testing specific subset of SDLC. It's a phased process to verify software meets requirements and is bug-free. From my notes, it's not just about finding errors but ensuring the product delivers value. Good STLC integrates with SDLC to shift left test early and often.
 
-### STLC Phases
+### Detailed STLC Phases
+
+I've broken this down with more activities and examples based on what I've studied. Each phase builds on the last for thorough coverage.
 
 #### Phase 1: Requirement Analysis
-**QA Activities:**
-- Review requirements documents
-- Identify testable requirements
-- Clarify doubts with stakeholders
-- Create Requirement Traceability Matrix (RTM)
+This is where QA dives into what needs testing. It's about understanding the "what" before the "how."
 
-**Deliverable:** RTM, List of testable requirements
+**QA Activities:**
+- Thoroughly review requirements specs, user stories, and design docs.
+- Identify ambiguities and seek clarifications from devs or stakeholders.
+- Categorize requirements as functional (what it does) vs. non-functional (how well it does it).
+- Build a Requirement Traceability Matrix (RTM) to link reqs to tests.
+- Assess risks and prioritize based on impact.
+
+**Deliverables:** RTM, ambiguity log, testable requirements list.
 
 **Example:**
-```
-Requirement: "User should be able to login"
-Testable aspects:
-- Valid credentials
-- Invalid credentials
-- Empty fields
-- Session timeout
-```
+For a login feature:
+- Testable: Valid/invalid creds, session management.
+- Non-testable: Vague like "user-friendly"—clarify metrics.
+
+**Tip from Training:** Involve QA early to prevent requirement gaps; I've seen how this avoids 30% of later defects.
 
 ---
 
 #### Phase 2: Test Planning
+The strategy phase plan your attack on potential bugs.
+
 **QA Activities:**
-- Define test strategy
-- Estimate effort and cost
-- Select tools
-- Define entry/exit criteria
-- Assign roles
+- Outline test scope, objectives, and approach (manual vs. automated).
+- Estimate resources, timelines, and costs using techniques like Work Breakdown Structure.
+- Select tools (e.g., JIRA for tracking, Selenium for automation).
+- Define entry/exit criteria, risks, and mitigation.
+- Assign team roles and schedule reviews.
 
-**Deliverable:** Test Plan document
+**Deliverables:** Comprehensive Test Plan document, resource matrix.
 
-**Entry Criteria:**
-- Requirements are finalized
-- Test environment is ready
+**Entry Criteria Example:** Stable requirements, approved design.
+**Exit Criteria Example:** 90% test coverage, no high-severity open bugs.
 
-**Exit Criteria:**
-- All test cases executed
-- 95%+ pass rate achieved
-- All critical bugs fixed
+**Additional Info:** Include contingency plans for delays. In real projects, this phase might take 20-30% of testing time.
 
 ---
 
 #### Phase 3: Test Case Development
+Here, we create the actual tests. Focus on clarity and coverage.
+
 **QA Activities:**
-- Write detailed test cases
-- Create test data
-- Review test cases
-- Get approval
+- Develop positive/negative test cases based on techniques (see below).
+- Prepare test data (e.g., dummy users, edge values).
+- Peer review cases for gaps.
+- Automate where feasible for regression.
+- Get sign-off from leads.
 
-**Deliverable:** Test cases, Test data, Test scripts
+**Deliverables:** Test case repository, data sets, scripts.
 
-**Test Case Example:**
+**Test Case Template Example:**
 ```
-ID: TC-001
-Title: Verify login with valid credentials
-Precondition: User has active account
+Test ID: TC-001
+Module: Login
+Title: Verify successful login with valid credentials
+Preconditions: Application is running, user account exists
 Steps:
-  1. Go to login page
-  2. Enter username
-  3. Enter password
-  4. Click Login
-Expected: User sees dashboard
+1. Navigate to login page
+2. Enter valid username
+3. Enter valid password
+4. Click 'Login'
+Expected Result: Redirect to dashboard, welcome message displayed
+Actual Result: [To be filled during execution]
+Status: [Pass/Fail]
 Priority: High
+Severity: Critical
 ```
+
+**Insight:** Aim for 100% requirement coverage via RTM. I've practiced writing 50+ cases for Sauce Demo it's tedious but essential.
 
 ---
 
 #### Phase 4: Test Environment Setup
+Get the playground ready for testing.
+
 **QA Activities:**
-- Set up test server
-- Configure test data
-- Install necessary tools
-- Perform smoke test on environment
+- Provision hardware/software mimicking production (e.g., servers, browsers).
+- Load test data and configure access.
+- Install tools and integrate CI/CD if needed.
+- Run smoke tests to validate setup.
 
-**Deliverable:** Ready test environment
+**Deliverables:** Environment setup report, configuration checklist.
 
-**Checklist:**
-- [ ] Server configured
-- [ ] Database populated
-- [ ] Test users created
-- [ ] Browsers installed
-- [ ] Tools configured
+**Checklist Example:**
+- [ ] OS and browser versions match specs
+- [ ] Database seeded with test data
+- [ ] Network/firewall configured
+- [ ] Backup/restore procedures tested
+
+**Common Pitfall:** Environment mismatches cause false positives; always verify.
 
 ---
 
 #### Phase 5: Test Execution
+The action phase run tests and hunt bugs.
+
 **QA Activities:**
-- Execute test cases
-- Log defects
-- Retest fixed bugs
-- Update test results
+- Execute cases in order (smoke first, then detailed).
+- Log defects with details (steps, screenshots).
+- Retest fixes and run regressions.
+- Track metrics daily.
 
-**Deliverable:** Test execution report, Bug reports
+**Deliverables:** Execution logs, defect reports, coverage reports.
 
-**Process:**
+**Workflow Diagram:**
 ```
-Execute Test Case
-       ↓
-   Pass or Fail?
-       ↓
-   If Fail → Log Bug → Track → Retest → Update Status
-       ↓
-   If Pass → Mark as Passed
+Start Execution → Run Test Case → Compare Actual vs Expected
+If Match: Pass → Next Case
+If Not: Fail → Log Bug → Assign → Fix → Retest
 ```
+
+**Tip:** Use tools like TestRail for tracking. In my simulations, parallel execution sped things up.
 
 ---
 
 #### Phase 6: Test Cycle Closure
+Wrap up and reflect.
+
 **QA Activities:**
-- Analyze test results
-- Document learnings
-- Archive test artifacts
-- Prepare summary report
+- Compile results and analyze trends (e.g., bug clusters).
+- Document lessons learned and process improvements.
+- Archive artifacts for audits.
+- Present summary to stakeholders.
 
-**Deliverable:** Test summary report, Lessons learned
+**Deliverables:** Closure report, metrics dashboard, recommendations.
 
-**Metrics to Report:**
-- Total test cases: X
-- Executed: Y
-- Passed: Z
-- Failed: A
-- Blocked: B
-- Pass percentage: Z/Y * 100
+**Key Metrics:**
+- Defect Density: Bugs per KLOC (thousand lines of code)
+- Test Coverage: % of code/reqs tested
+- Pass Rate: (Passed / Total) * 100
+
+**Example Report Snippet:**
+Total Cases: 100 | Executed: 95 | Passed: 85 | Failed: 10 | Blocked: 5 | Pass %: 89%
 
 ---
 
-## 🔍 Testing Types
+## Testing Types in Depth
 
-### 1. Functional Testing
+Testing isn't one-size-fits-all. Here's a breakdown with more context.
+
+### Functional Testing (What the System Does)
 
 #### a) Unit Testing
-- **Who:** Developers
-- **What:** Individual components
-- **When:** During development
-- **Example:** Testing a login function in isolation
+- **By:** Developers
+- **Focus:** Isolated code units (functions, methods)
+- **Tools:** JUnit, PyTest
+- **Example:** Testing a password validation function alone.
 
 #### b) Integration Testing
-- **Who:** Developers + QA
-- **What:** Combined components
-- **When:** After unit testing
-- **Example:** Testing login + profile update together
+- **By:** Devs/QA
+- **Focus:** Interactions between units (e.g., API calls)
+- **Approaches:** Big Bang, Top-Down, Bottom-Up
+- **Example:** Login module integrating with database.
 
 #### c) System Testing
-- **Who:** QA Team
-- **What:** Complete system
-- **When:** After integration
-- **Example:** Testing entire e-commerce flow
+- **By:** QA
+- **Focus:** End-to-end in integrated environment
+- **Example:** Full user journey in an app.
 
-#### d) Acceptance Testing (UAT)
-- **Who:** End users / Client
-- **What:** Business requirements
-- **When:** Before release
-- **Example:** Client validates features
+#### d) Acceptance Testing
+- **By:** Users/Clients
+- **Types:** Alpha (internal), Beta (external)
+- **Example:** UAT for a new feature rollout.
 
----
-
-### 2. Non-Functional Testing
+### Non-Functional Testing (How Well It Performs)
 
 #### a) Performance Testing
-**Checks:** Speed, scalability, stability
-
-**Types:**
-- Load Testing: Normal load
-- Stress Testing: Beyond capacity
-- Spike Testing: Sudden traffic increase
+- **Focus:** Response time, throughput
+- **Tools:** JMeter, LoadRunner
+- **Subtypes:** Endurance (long-duration), Volume (data handling)
 
 #### b) Security Testing
-**Checks:** Vulnerabilities, data protection
-
-**Tests:**
-- SQL Injection
-- Cross-Site Scripting (XSS)
-- Authentication bypass
+- **Focus:** Threats like OWASP Top 10
+- **Tools:** Burp Suite, ZAP
+- **Example:** Penetration testing for vulnerabilities.
 
 #### c) Usability Testing
-**Checks:** User-friendliness
+- **Focus:** UX metrics like task completion time
+- **Methods:** Heuristic evaluation, user sessions
+- **Example:** A/B testing navigation menus.
 
-**Aspects:**
-- Navigation ease
-- Visual appeal
-- Error messages clarity
-
----
-
-## 🐛 Bug Lifecycle
-
-```
-1. New (Bug reported by tester)
-       ↓
-2. Assigned (to developer)
-       ↓
-3. Open (Developer working on it)
-       ↓
-4. Fixed (Developer claims fix)
-       ↓
-5. Ready for Retest
-       ↓
-6. Retest (Tester verifies)
-       ↓
-   Pass → Closed
-   Fail → Reopen (back to step 3)
-```
-
-**Alternative Paths:**
-- **Rejected:** Not a bug
-- **Deferred:** Fix in future release
-- **Duplicate:** Already reported
+**Other Types:** Compatibility (browsers/devices), Localization (languages), Accessibility (WCAG compliance).
 
 ---
 
-## 🎯 Test Case Design Techniques
+## Bug Lifecycle Explained
+
+Bugs have a life too—tracking them properly is key to resolution.
+
+```
+New → Assigned → Open → Fixed → Pending Retest → Retested
+   ↑                                         ↓
+Reopened (if fail)                          Closed (if pass)
+```
+
+**Statuses Expanded:**
+- **New:** Freshly reported.
+- **Rejected:** Not reproducible or invalid.
+- **Deferred:** Postponed.
+- **Duplicate:** Merge with existing.
+
+**Best Practice:** Use tools like Bugzilla; include repro steps, environment, and expected/actual.
+
+---
+
+## Test Case Design Techniques
+
+These help create efficient tests without exhaustive coverage.
 
 ### 1. Equivalence Partitioning
-**Concept:** Divide input into groups that behave similarly
+Group similar inputs; test one per group to infer behavior.
 
-**Example:** Age field (0-120)
-- Invalid: -5, -1 (negative)
-- Valid: 0-120
-- Invalid: 121, 200 (too high)
-
-**Test Cases:** Pick one value from each partition
-- TC1: Age = -1 (should fail)
-- TC2: Age = 25 (should pass)
-- TC3: Age = 150 (should fail)
-
----
+**Example Extended:** Password length 8-16 chars.
+- Invalid: 7 chars
+- Valid: 12 chars
+- Invalid: 17 chars
 
 ### 2. Boundary Value Analysis
-**Concept:** Test at boundaries of input ranges
+Test edges where errors lurk.
 
-**Example:** Age field (18-65 for job application)
-
-**Test Cases:**
-- Just below: 17 ❌
-- Minimum: 18 ✅
-- Middle: 40 ✅
-- Maximum: 65 ✅
-- Just above: 66 ❌
-
----
+**Example:** File upload size 1-10MB.
+- 0.9MB (fail), 1MB (pass), 5MB (pass), 10MB (pass), 10.1MB (fail)
 
 ### 3. Decision Table Testing
-**Concept:** Test different combinations of inputs
+Matrix for input combos.
 
-**Example:** Login with Remember Me
+**Expanded Example:** Discount system.
 
-| Username | Password | Remember Me | Result |
-|----------|----------|-------------|--------|
-| Valid | Valid | Yes | Login + Remember |
-| Valid | Valid | No | Login only |
-| Valid | Invalid | Yes | Fail |
-| Invalid | Valid | Yes | Fail |
+| Age | Membership | Discount |
+|-----|------------|----------|
+| <18 | No        | 0%      |
+| <18 | Yes       | 10%     |
+| >=18| No        | 5%      |
+| >=18| Yes       | 20%     |
 
----
-
-## 📊 Severity vs Priority
-
-### Severity (Technical Impact)
-**Critical:** System crash, data loss
-**High:** Major feature broken
-**Medium:** Feature works with workaround
-**Low:** Cosmetic issue
-
-### Priority (Business Urgency)
-**P0/Immediate:** Fix now (production down)
-**P1/High:** Fix in current sprint
-**P2/Medium:** Fix in next release
-**P3/Low:** Fix when time permits
-
-### Real Example:
-**Bug:** Company logo misspelled on homepage
-
-- **Severity:** Low (no functional impact)
-- **Priority:** High (brand reputation)
+**Other Techniques:** State Transition (e.g., order statuses), Pairwise (combo reduction).
 
 ---
 
-## 💡 Key Learnings
+## Severity vs. Priority: Don't Confuse Them
 
-1. **Testing starts early** - Not just at the end
-2. **Prevention > Detection** - Find bugs in requirements phase
-3. **Document everything** - Test cases, bugs, results
-4. **Severity ≠ Priority** - Business context matters
-5. **Exploratory testing matters** - Don't just follow scripts
+**Severity:** How bad is the impact?
+- Blocker: App unusable.
+- Critical: Data corruption.
+- Major: Feature broken, no workaround.
+- Minor: Annoyance.
+- Trivial: Spelling error.
 
----
+**Priority:** How soon to fix?
+- P1: Immediate.
+- P2: High urgency.
+- P3: Medium.
+- P4: Low.
 
-## 🎓 Glossary
-
-**Test Case:** Step-by-step instructions to verify functionality  
-**Test Suite:** Collection of test cases  
-**Test Scenario:** High-level testing approach  
-**Test Plan:** Document describing testing strategy  
-**RTM:** Requirement Traceability Matrix - links requirements to test cases  
-**Smoke Test:** Basic sanity check if build is testable  
-**Sanity Test:** Focused test on specific functionality after bug fix  
-**Regression Test:** Re-running tests to ensure new changes didn't break existing features  
+**Scenario:** Crashing on rare device/ High Severity, Low Priority if user base is small.
 
 ---
 
-*Notes compiled during Week 1 of QA learning journey*  
-*Date: October 7,2025*
+## Key Learnings and Tips
 
+From my week 1 reflections:
+1. Start testing in requirements, cheaper to fix early.
+2. Balance scripted and exploratory testing for better coverage.
+3. Always trace back to business value; not all bugs are equal.
+4. Collaborate: QA isn't isolated work with devs.
+5. Stay updated: Tools evolve; learn automation basics next.
+6. Prevention mindset: Use root cause analysis (5 Whys) for bugs.
 
+---
+
+## Glossary of Terms
+
+- **Defect Leakage:** Bugs escaping to production.
+- **Test Harness:** Setup for automated tests.
+- **Black Box Testing:** No code knowledge, focus on inputs/outputs.
+- **White Box:** Code-level insight.
+- **Grey Box:** Mix of both.
+- **Ad-hoc Testing:** Informal, no plan—great for quick checks.
+
+---
+
+*These notes are from my personal study sessions, including hands-on practice with demo apps. I'll update as I learn more in Week 2.*
+
+---
+**Prepared by:** Muhammad Yasin Asif  
+**Role:** QA Engineer (In Training)  
+**Date:** October 8, 2025  
+*Repository:* [QA-Engineer-Portfolio](https://github.com/YasinAsif/QA-Engineer-Portfolio)
