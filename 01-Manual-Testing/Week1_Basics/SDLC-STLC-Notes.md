@@ -369,6 +369,6 @@ Execute Test Case
 ---
 
 *Notes compiled during Week 1 of QA learning journey*  
-*Date: [Your date]*
+*Date: October 7,2025*
 
 
