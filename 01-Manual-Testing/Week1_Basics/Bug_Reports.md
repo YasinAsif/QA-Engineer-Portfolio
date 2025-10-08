@@ -386,5 +386,3 @@ Bug-Reports/
 ---
 
 **Last Updated:** October 2025  
-**Next Review:** [Set date for retest after fixes]  
-**Approved By:** [Your Name]
