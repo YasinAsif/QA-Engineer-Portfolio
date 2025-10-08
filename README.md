@@ -10,7 +10,8 @@
 A comprehensive, structured journey from **zero to job-ready QA Automation Engineer** in 6 months. This repository documents every step, project, and learning milestone.
 
 **Started:** October 1, 2025  
-**Current Status:** Week 1 Complete ✅  
+**Current Status:** Week 3 Complete ✅ (Manual Testing Phase Done)  
+**Current Phase:** Selenium Automation (Week 9+)  
 **Target Completion:** April 1, 2026  
 **Goal:** Land Junior QA Automation Engineer role
 
@@ -21,18 +22,29 @@ A comprehensive, structured journey from **zero to job-ready QA Automation Engin
 ```
 QA-Engineer-Portfolio/
 │
-├── 01-Manual-Testing/              ← Week 1-3 (Foundation)
+├── 01-Manual-Testing/              ← Week 1-3 (Foundation) ✅ COMPLETE
 │   ├── Week1_Basics/              ✅ COMPLETE
-│   │   ├── TestCases.md
-│   │   ├── Bug_Reports.md
-│   │   ├── SDLC-STLC-Notes.md
-│   │   └── Test_Cases.xlsx
-│   ├── Week2_Bug_Tracking/        📍 Next
-│   └── Week3_Test_Management/     🔜 Upcoming
+│   │   ├── TestCases.md           (20 test cases executed)
+│   │   ├── Bug_Reports.md         (5 comprehensive bug reports)
+│   │   ├── README.md              (Project overview)
+│   │   ├── SDLC-STLC-Notes.md     (Testing methodology)
+│   │   └── Test_Cases.xlsx        (Excel test cases)
+│   ├── Week2_Bug_Tracking/        ✅ COMPLETE
+│   │   ├── Bug_Report_Samples.xlsx
+│   │   ├── Jira_Practice_Screenshots/
+│   │   └── README.md
+│   ├── Week3_Test_Management/     ✅ COMPLETE
+│   │   ├── README.md
+│   │   ├── Test_Execution_Report.pdf
+│   │   └── TestLink_Cases.xlsx
 │
-├── 02-Automation-Testing/          ← Week 9-16 (Core Skills)
-│   ├── Selenium_Python/
-│   └── Playwright_Python/
+├── 02-Automation-Testing/          ← Week 9-16 (Core Skills) 🔄 IN PROGRESS
+│   ├── Selenium_Python/           ✅ STARTED
+│   │   ├── basics/                (first_test.py, locators.py)
+│   │   ├── projects/              (saucedemo_automation)
+│   │   ├── utilities/             (config, driver_setup, logger)
+│   │   └── README.md
+│   ├── Playwright_Python/         🔜 Upcoming
 │
 ├── 03-API-Testing/                 ← Week 15-16
 │   ├── Postman_Collections/
@@ -45,8 +57,10 @@ QA-Engineer-Portfolio/
 │   ├── Jenkins_Pipelines/
 │   └── GitHub_Actions/
 │
-└── 06-Documentation-and-Reports/   ← Week 21-24
-    └── Professional documentation
+├── 06-Documentation-and-Reports/   ← Week 21-24
+│   └── Professional documentation
+│
+└── config.yaml, driver_setup.py, logger.py (Global utilities)
 ```
 
 ---
@@ -77,43 +91,83 @@ QA-Engineer-Portfolio/
 
 ---
 
-#### Week 2: Git Mastery & Python Basics 📍 **IN PROGRESS**
-**Target:** October 14, 2025
+#### Week 2: Bug Tracking & Jira ✅ **COMPLETE**
+**Status:** 🟢 Finished  
+**Completed:** October 14, 2025
+
+**What I Built:**
+- ✅ Bug Report Samples in Excel format
+- ✅ Jira Practice Screenshots and workflows
+- ✅ Professional bug tracking documentation
+- ✅ Understanding of defect lifecycle management
+
+**Skills Gained:**
+- Bug tracking tool proficiency (Jira)
+- Defect lifecycle management
+- Bug triage and prioritization
+- Professional bug reporting standards
+
+[📁 View Week 2 Work →](./01-Manual-Testing/Week2_Bug_Tracking/)
+
+---
+
+#### Week 3: Test Management ✅ **COMPLETE**
+**Status:** 🟢 Finished  
+**Completed:** October 21, 2025
+
+**What I Built:**
+- ✅ Test Execution Report in PDF format
+- ✅ TestLink Test Cases in Excel
+- ✅ Test management methodology documentation
+- ✅ Test planning and execution strategies
+
+**Skills Gained:**
+- Test management tool proficiency (TestLink)
+- Test execution reporting
+- Test planning methodologies
+- Quality metrics and reporting
+
+[📁 View Week 3 Work →](./01-Manual-Testing/Week3_Test_Management/)
+
+---
+
+#### Week 4-8: Programming & Web Fundamentals 🔄 **IN PROGRESS**
+**Current Target:** November 2025
 
 **Goals:**
 - [ ] Master Git commands (clone, commit, push, pull, branch, merge)
 - [ ] Learn Python basics (variables, loops, functions)
-- [ ] Complete 20 HackerRank problems
+- [ ] Complete 50+ HackerRank problems
 - [ ] Create Python test data generator
+- [ ] HTML/CSS/JavaScript basics
+- [ ] SQL queries and database testing
 
 ---
 
-#### Week 3-4: Programming Fundamentals 🔜 **UPCOMING**
-- [ ] Advanced Python (OOP, file handling, error handling)
-- [ ] Build mini automation projects like simple scripts for data validation
-- [ ] 50+ coding problems solved on platforms like LeetCode and HackerRank
+### 🔄 Phase 2: Automation Core (Weeks 9-16) - CURRENT PHASE
+
+#### Week 9+: Selenium WebDriver 🔄 **IN PROGRESS**
+**Current Target:** November 2025
+
+**What I'm Building:**
+- ✅ Selenium basics (first_test.py, locators.py)
+- ✅ SauceDemo automation project structure
+- ✅ Page Object Model implementation
+- ✅ Test utilities (config, driver_setup, logger)
+
+**Current Goals:**
+- [ ] Complete SauceDemo automation suite
+- [ ] Implement Page Object Model best practices
+- [ ] Add test reporting and screenshots
+- [ ] Create reusable test utilities
 
 ---
 
-#### Week 5-6: Web Fundamentals & APIs 🔜
-- [ ] HTML/CSS/JavaScript basics for understanding web elements
-- [ ] HTTP methods & REST APIs with practical exercises
-- [ ] Postman for API testing, including collections and environments
-
----
-
-#### Week 7-8: SQL & Database Testing 🔜
-- [ ] SQL queries (JOIN, subqueries, aggregates)
-- [ ] Database validation techniques
-- [ ] Data-driven testing concepts with examples
-
----
-
-### 📋 Phase 2: Automation Core (Weeks 9-16)
-- Selenium WebDriver with Python for browser automation
-- Playwright for modern web testing
-- Pytest framework for test organization
-- Building end-to-end automation suites
+### 📋 Phase 2: Automation Core (Weeks 9-16) - CONTINUED
+- ✅ Selenium WebDriver with Python for browser automation (Started)
+- 🔜 Playwright for modern web testing
+- 🔜 Pytest framework for test organization
+- 🔜 Building end-to-end automation suites
 
 ### 🚀 Phase 3: Modern Tools (Weeks 17-20)
 - JMeter for performance and load testing
@@ -133,27 +187,27 @@ QA-Engineer-Portfolio/
 
 ### Overall Progress
 ```
-████░░░░░░░░░░░░░░░░ 4% Complete (1/24 weeks)
+███████░░░░░░░░░░░░░ 12.5% Complete (3/24 weeks)
 ```
 
 | Category | Progress | Status |
 |----------|----------|--------|
-| **Weeks Completed** | 1/24 | 🟢 4% |
-| **GitHub Projects** | 1/6 | 🟡 Started |
+| **Weeks Completed** | 3/24 | 🟢 12.5% |
+| **GitHub Projects** | 2/6 | 🟡 In Progress |
 | **Test Cases Written** | 20 | ✅ |
 | **Bugs Documented** | 5 | ✅ |
 | **Automation Tests** | 0 | ⏳ Week 9 |
-| **Programming Skills** | 0% | 📍 Week 2 |
+| **Programming Skills** | 25% | 🟡 Week 2-3 |
 
 ### Skills Breakdown
 ```
-Manual Testing:     ████░░░░░░ 40% (Beginner)
-Git/GitHub:         ███░░░░░░░ 30% (Learning)
-Programming:        ░░░░░░░░░░ 0%  (Week 2 start)
-Automation:         ░░░░░░░░░░ 0%  (Week 9 start)
+Manual Testing:     ██████████ 100% (Completed)
+Git/GitHub:         ███████░░░ 70% (Proficient)
+Programming:        ███░░░░░░░ 30% (Python basics)
+Automation:         ██░░░░░░░░ 20% (Selenium started)
 API Testing:        ░░░░░░░░░░ 0%  (Week 15 start)
 CI/CD:              ░░░░░░░░░░ 0%  (Week 19 start)
-Job Readiness:      ██░░░░░░░░░░░░░░ 10%
+Job Readiness:      ████░░░░░░░░░░░░ 20%
 ```
 
 ---
@@ -168,22 +222,45 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 **[View Test Cases →](./01-Manual-Testing/Week1_Basics/TestCases.md)**  
 **[View Bug Reports →](./01-Manual-Testing/Week1_Basics/Bug_Reports.md)**
 
+### 2. Bug Tracking & Test Management (Weeks 2-3) ✅
+**Tools:** Jira, TestLink, Excel  
+**Type:** Professional Bug Tracking & Test Management  
+**Deliverables:** Bug samples, Test execution reports, TestLink cases  
+**[View Bug Tracking →](./01-Manual-Testing/Week2_Bug_Tracking/)**  
+**[View Test Management →](./01-Manual-Testing/Week3_Test_Management/)**
+
+### 3. Selenium WebDriver Automation (Week 9+) 🔄
+**Platform:** Sauce Demo (https://www.saucedemo.com/)  
+**Type:** Web Automation with Python  
+**Framework:** Selenium WebDriver + Page Object Model  
+**Status:** In Progress  
+**[View Automation Project →](./02-Automation-Testing/Selenium_Python/)**
+
 ---
 
 ## 🛠️ Tools & Technologies
 
 ### Currently Using
-- 📝 **Documentation:** Markdown, Excel, Google Sheets for test cases and reports
+- 📝 **Documentation:** Markdown, Excel for test cases and reports
 - 🔧 **Version Control:** Git, GitHub for repository management
 - 🌐 **Browsers:** Chrome DevTools for inspection and debugging
-- 📋 **Test Management:** Manual spreadsheets and Markdown templates
+- 📋 **Test Management:** TestLink, Jira for professional test management
+- 🐍 **Python 3.x** - Programming fundamentals and automation scripting
+- 🤖 **Selenium WebDriver** - Web automation with Python
+
+### Recently Mastered
+- ✅ **Manual Testing** - Test case design, execution, and bug reporting
+- ✅ **Bug Tracking** - Jira workflows and defect lifecycle management
+- ✅ **Test Management** - TestLink, test execution reporting
+- ✅ **Git/GitHub** - Version control, branching, conflict resolution
 
 ### Learning This Month
-- 🐍 **Python 3.x** - Programming fundamentals like data types and control structures
-- 🔀 **Git** - Advanced commands & workflows including conflict resolution
+- 🤖 **Selenium WebDriver** - Advanced automation techniques and Page Object Model
+- 🐍 **Python** - Advanced programming concepts and test automation
+- 📊 **Pytest** - Test framework and reporting
 
-### Future Tech Stack (Months 2-6)
-- **Automation:** Selenium, Playwright, Pytest
+### Future Tech Stack (Months 3-6)
+- **Automation:** Playwright, Pytest framework
 - **API:** Postman, REST Assured, Requests library
 - **Performance:** JMeter, Locust
 - **CI/CD:** Jenkins, GitHub Actions
@@ -219,11 +296,12 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 
 **Required Skills (Building):**
 - ✅ Manual Testing
-- ⏳ Selenium WebDriver
-- ⏳ Python Programming
+- ✅ Bug Tracking & Test Management
+- ✅ Git/GitHub proficiency
+- 🔄 Selenium WebDriver (In Progress)
+- 🔄 Python Programming (In Progress)
 - 🔜 API Testing
 - 🔜 CI/CD Integration
-- 🔜 Git/GitHub proficiency
 
 **Application Strategy:**
 - **Month 4-5:** Start applying to internships via LinkedIn and local job boards
@@ -276,9 +354,11 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 
 - ✅ **Oct 7, 2025:** Repository created with professional structure
 - ✅ **Oct 7, 2025:** Week 1 completed - Testing fundamentals mastered
-- 📍 **Oct 14, 2025:** Week 2 target - Git & Python basics
-- 🎯 **Nov 2025:** First automation project with Selenium
-- 🎯 **Jan 2026:** Complete portfolio with 6 projects
+- ✅ **Oct 14, 2025:** Week 2 completed - Bug tracking & Jira proficiency
+- ✅ **Oct 21, 2025:** Week 3 completed - Test management & TestLink
+- 🔄 **Nov 2025:** Selenium automation project (In Progress)
+- 🎯 **Dec 2025:** Complete automation framework
+- 🎯 **Jan 2026:** API testing and advanced automation
 - 🎯 **Feb 2026:** First QA job offer
 
 ---
@@ -308,14 +388,16 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 ✅ **Consistent Commits:** Check my commit history for dedication  
 ✅ **Problem Solver:** Focus on practical, real-world testing scenarios  
 
-**Current Status:** Week 1 complete, actively learning and building portfolio
+**Current Status:** Week 3 complete, Selenium automation in progress
 
 ---
 
 ## 🔄 Version History
 
 - **v0.1.0** (Oct 7, 2025) - Initial repository structure, Week 1 complete
-- **v0.2.0** (TBD) - Week 2 complete, Python basics added
+- **v0.2.0** (Oct 14, 2025) - Week 2 complete, Bug tracking & Jira added
+- **v0.3.0** (Oct 21, 2025) - Week 3 complete, Test management & TestLink
+- **v0.4.0** (Nov 2025) - Selenium automation project started
 
 ---
 
@@ -330,9 +412,9 @@ Feel free to use templates and structure for your own learning journey!
 
 **⭐ Star this repo if you find it helpful!**
 
-*Last Updated: October 8, 2025*  
-*Status: 🚧 Building (Week 1 Complete)*
+*Last Updated: November 2025*  
+*Status: 🚧 Building (Week 3 Complete, Automation in Progress)*
 
-**Journey Progress:** ████░░░░░░░░░░░░░░░░ 4%
+**Journey Progress:** ███████░░░░░░░░░░░░░ 12.5%
 
 </div>
