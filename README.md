@@ -23,9 +23,10 @@ QA-Engineer-Portfolio/
 │
 ├── 01-Manual-Testing/              ← Week 1-3 (Foundation)
 │   ├── Week1_Basics/              ✅ COMPLETE
-│   │   ├── SauceDemo_Test_Report.md
-│   │   ├── SDLC_STLC_Notes.md
-│   │   └── Bug_Report_Template.md
+│   │   ├── TestCases.md
+│   │   ├── Bug_Reports.md
+│   │   ├── SDLC-STLC-Notes.md
+│   │   └── Test_Cases.xlsx
 │   ├── Week2_Bug_Tracking/        📍 Next
 │   └── Week3_Test_Management/     🔜 Upcoming
 │
@@ -59,10 +60,10 @@ QA-Engineer-Portfolio/
 **Completed:** October 7, 2025
 
 **What I Built:**
-- ✅ 20 Manual Test Cases for Sauce Demo
-- ✅ 2 Detailed Bug Reports with screenshots
-- ✅ SDLC/STLC Study Notes
-- ✅ Professional Bug Report Template
+- ✅ 20 Manual Test Cases for Sauce Demo (TestCases.md)
+- ✅ 5 Detailed Bug Reports with comprehensive documentation (Bug_Reports.md)
+- ✅ SDLC/STLC Study Notes (SDLC-STLC-Notes.md)
+- ✅ Professional Excel Test Cases (Test_Cases.xlsx)
 
 **Skills Gained:**
 - Test case design techniques (e.g., equivalence partitioning, boundary value analysis)
@@ -140,7 +141,7 @@ QA-Engineer-Portfolio/
 | **Weeks Completed** | 1/24 | 🟢 4% |
 | **GitHub Projects** | 1/6 | 🟡 Started |
 | **Test Cases Written** | 20 | ✅ |
-| **Bugs Documented** | 2 | ✅ |
+| **Bugs Documented** | 5 | ✅ |
 | **Automation Tests** | 0 | ⏳ Week 9 |
 | **Programming Skills** | 0% | 📍 Week 2 |
 
@@ -163,8 +164,9 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 **Platform:** Sauce Demo (https://www.saucedemo.com/)  
 **Type:** Exploratory & Test Case Design  
 **Test Cases:** 20  
-**Bugs Found:** 2  
-**[View Project →](./01-Manual-Testing/Week1_Basics/SauceDemo_Test_Report.md)**
+**Bugs Found:** 5  
+**[View Test Cases →](./01-Manual-Testing/Week1_Basics/TestCases.md)**  
+**[View Bug Reports →](./01-Manual-Testing/Week1_Basics/Bug_Reports.md)**
 
 ---
 
@@ -239,8 +241,8 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 **Achievements:**
 - ✅ Completed ISTQB Foundation basics (20 pages)
 - ✅ Created 20 professional test cases for Sauce Demo
-- ✅ Found and documented 2 bugs with proper format
-- ✅ Built reusable bug report template
+- ✅ Found and documented 5 bugs with comprehensive reports
+- ✅ Built professional bug report documentation system
 - ✅ Learned SDLC, STLC, testing types in depth
 - ✅ Set up GitHub portfolio structure
 - ✅ Joined QA communities (Reddit)
