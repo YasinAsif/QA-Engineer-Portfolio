@@ -9,9 +9,9 @@
 
 A comprehensive, structured journey from **zero to job-ready QA Automation Engineer** in 6 months. This repository documents every step, project, and learning milestone.
 
-**Started:** [Your start date]  
+**Started:** October 1, 2025  
 **Current Status:** Week 1 Complete ✅  
-**Target Completion:** [6 months from start]  
+**Target Completion:** April 1, 2026  
 **Goal:** Land Junior QA Automation Engineer role
 
 ---
@@ -23,6 +23,9 @@ QA-Engineer-Portfolio/
 │
 ├── 01-Manual-Testing/              ← Week 1-3 (Foundation)
 │   ├── Week1_Basics/              ✅ COMPLETE
+│   │   ├── SauceDemo_Test_Report.md
+│   │   ├── SDLC_STLC_Notes.md
+│   │   └── Bug_Report_Template.md
 │   ├── Week2_Bug_Tracking/        📍 Next
 │   └── Week3_Test_Management/     🔜 Upcoming
 │
@@ -56,18 +59,18 @@ QA-Engineer-Portfolio/
 **Completed:** October 7, 2025
 
 **What I Built:**
-- ✅ 20+ Manual Test Cases for [website name]
-- ✅ 5 Detailed Bug Reports with screenshots
+- ✅ 20 Manual Test Cases for Sauce Demo
+- ✅ 2 Detailed Bug Reports with screenshots
 - ✅ SDLC/STLC Study Notes
 - ✅ Professional Bug Report Template
 
 **Skills Gained:**
-- Test case design techniques
-- Bug report documentation
-- Testing terminology (Severity vs Priority)
-- Software Testing Life Cycle (STLC)
+- Test case design techniques (e.g., equivalence partitioning, boundary value analysis)
+- Bug report documentation with clear repro steps and severity/priority
+- Testing terminology (Severity vs Priority, defect lifecycle)
+- Software Testing Life Cycle (STLC) phases and integration with SDLC
 
-**Time Invested:** [X hours]
+**Time Invested:** 25 hours
 
 [📁 View Week 1 Work →](./01-Manual-Testing/Week1_Basics/)
 
@@ -85,34 +88,43 @@ QA-Engineer-Portfolio/
 ---
 
 #### Week 3-4: Programming Fundamentals 🔜 **UPCOMING**
-- [ ] Advanced Python (OOP, file handling)
-- [ ] Build mini automation projects
-- [ ] 50+ coding problems solved
+- [ ] Advanced Python (OOP, file handling, error handling)
+- [ ] Build mini automation projects like simple scripts for data validation
+- [ ] 50+ coding problems solved on platforms like LeetCode and HackerRank
 
 ---
 
 #### Week 5-6: Web Fundamentals & APIs 🔜
-- [ ] HTML/CSS/JavaScript basics
-- [ ] HTTP methods & REST APIs
-- [ ] Postman for API testing
+- [ ] HTML/CSS/JavaScript basics for understanding web elements
+- [ ] HTTP methods & REST APIs with practical exercises
+- [ ] Postman for API testing, including collections and environments
 
 ---
 
 #### Week 7-8: SQL & Database Testing 🔜
-- [ ] SQL queries (JOIN, subqueries)
-- [ ] Database validation
-- [ ] Data-driven testing concepts
+- [ ] SQL queries (JOIN, subqueries, aggregates)
+- [ ] Database validation techniques
+- [ ] Data-driven testing concepts with examples
 
 ---
 
 ### 📋 Phase 2: Automation Core (Weeks 9-16)
-*Details to be added as I progress*
+- Selenium WebDriver with Python for browser automation
+- Playwright for modern web testing
+- Pytest framework for test organization
+- Building end-to-end automation suites
 
 ### 🚀 Phase 3: Modern Tools (Weeks 17-20)
-*Details to be added as I progress*
+- JMeter for performance and load testing
+- API automation with Requests and Pytest
+- Introduction to mobile testing basics
+- Security testing fundamentals
 
 ### 💼 Phase 4: Job Preparation (Weeks 21-24)
-*Details to be added as I progress*
+- Resume building and LinkedIn optimization
+- Mock interviews and behavioral questions
+- Open-source contributions
+- Freelance testing gigs for experience
 
 ---
 
@@ -127,8 +139,8 @@ QA-Engineer-Portfolio/
 |----------|----------|--------|
 | **Weeks Completed** | 1/24 | 🟢 4% |
 | **GitHub Projects** | 1/6 | 🟡 Started |
-| **Test Cases Written** | 20+ | ✅ |
-| **Bugs Documented** | 5+ | ✅ |
+| **Test Cases Written** | 20 | ✅ |
+| **Bugs Documented** | 2 | ✅ |
 | **Automation Tests** | 0 | ⏳ Week 9 |
 | **Programming Skills** | 0% | 📍 Week 2 |
 
@@ -148,25 +160,25 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 ## 🗂️ Featured Projects
 
 ### 1. Manual Testing Portfolio (Week 1) ✅
-**Platform:** [Website you tested]  
+**Platform:** Sauce Demo (https://www.saucedemo.com/)  
 **Type:** Exploratory & Test Case Design  
 **Test Cases:** 20  
-**Bugs Found:** 5  
-**[View Project →](./01-Manual-Testing/Week1_Basics/)**
+**Bugs Found:** 2  
+**[View Project →](./01-Manual-Testing/Week1_Basics/SauceDemo_Test_Report.md)**
 
 ---
 
 ## 🛠️ Tools & Technologies
 
 ### Currently Using
-- 📝 **Documentation:** Markdown, Excel, Google Sheets
-- 🔧 **Version Control:** Git, GitHub
-- 🌐 **Browsers:** Chrome DevTools
-- 📋 **Test Management:** Manual spreadsheets
+- 📝 **Documentation:** Markdown, Excel, Google Sheets for test cases and reports
+- 🔧 **Version Control:** Git, GitHub for repository management
+- 🌐 **Browsers:** Chrome DevTools for inspection and debugging
+- 📋 **Test Management:** Manual spreadsheets and Markdown templates
 
 ### Learning This Month
-- 🐍 **Python 3.x** - Programming fundamentals
-- 🔀 **Git** - Advanced commands & workflows
+- 🐍 **Python 3.x** - Programming fundamentals like data types and control structures
+- 🔀 **Git** - Advanced commands & workflows including conflict resolution
 
 ### Future Tech Stack (Months 2-6)
 - **Automation:** Selenium, Playwright, Pytest
@@ -183,17 +195,17 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 ### Books
 - ✅ ISTQB Foundation Level Syllabus (Currently reading)
 - 📖 "Software Testing" by Ron Patton (Started)
-- 📌 "Clean Code" by Robert Martin (On list)
+- 📌 "Clean Code" by Robert Martin (On list for coding best practices)
 
 ### Online Courses
-- Test Automation University (TAU) - Free
-- FreeCodeCamp - Software Testing
-- Guru99 Testing Tutorials
+- Test Automation University (TAU) - Free courses on testing basics
+- FreeCodeCamp - Software Testing certification track
+- Guru99 Testing Tutorials for practical examples
 
 ### Communities
-- Reddit: r/QualityAssurance, r/softwaretesting
-- LinkedIn: Following QA influencers
-- GitHub: Contributing to open source (future)
+- Reddit: r/QualityAssurance, r/softwaretesting for discussions and advice
+- LinkedIn: Following QA influencers like Alan Richardson and Angie Jones
+- GitHub: Contributing to open source (future goal starting Month 3)
 
 ---
 
@@ -212,9 +224,9 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 - 🔜 Git/GitHub proficiency
 
 **Application Strategy:**
-- **Month 4-5:** Start applying to internships
-- **Month 5-6:** Active job applications (5/day)
-- **Month 6+:** Full-time job search with complete portfolio
+- **Month 4-5:** Start applying to internships via LinkedIn and local job boards
+- **Month 5-6:** Active job applications (5/day) with tailored resumes
+- **Month 6+:** Full-time job search with complete portfolio and references
 
 ---
 
@@ -222,14 +234,14 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 
 ### Week 1: Testing Fundamentals (Oct 1-7, 2025) ✅
 
-**Hours Invested:** [X hours]
+**Hours Invested:** 25 hours
 
 **Achievements:**
 - ✅ Completed ISTQB Foundation basics (20 pages)
-- ✅ Created 20 professional test cases
-- ✅ Found and documented 5 bugs with proper format
+- ✅ Created 20 professional test cases for Sauce Demo
+- ✅ Found and documented 2 bugs with proper format
 - ✅ Built reusable bug report template
-- ✅ Learned SDLC, STLC, testing types
+- ✅ Learned SDLC, STLC, testing types in depth
 - ✅ Set up GitHub portfolio structure
 - ✅ Joined QA communities (Reddit)
 
@@ -240,11 +252,11 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 - Documentation is as important as testing itself
 
 **Challenges Faced:**
-- [What was difficult for you?]
-- [How you overcame it]
+- Grasping the nuances between different SDLC models was confusing at first, especially how V-Model integrates testing so early.
+- Overcame it by drawing diagrams and comparing them side-by-side in my notes, then applying them to the Sauce Demo project.
 
 **Most Interesting Bug:**
-- [Describe the coolest/trickiest bug you found]
+- The UI glitch when adding items to cart as the "problem_user"—the button didn't update to "Remove," which highlighted how user-specific behaviors can expose hidden issues. It was tricky to reproduce consistently at first.
 
 **Next Week Goals:**
 - Master Git commands
@@ -280,7 +292,7 @@ Job Readiness:      ██░░░░░░░░░░░░░░ 10%
 
 ## 💡 Portfolio Philosophy
 
-> "This portfolio isn't just about showcasing projects—it's proof of consistent learning, problem-solving ability, and commitment to quality. Every commit tells a story of growth."
+> "This portfolio isn't just about showcasing projects it's proof of consistent learning, problem-solving ability, and commitment to quality. Every commit tells a story of growth."
 
 ---
 
@@ -316,7 +328,7 @@ Feel free to use templates and structure for your own learning journey!
 
 **⭐ Star this repo if you find it helpful!**
 
-*Last Updated: October 7, 2025*  
+*Last Updated: October 8, 2025*  
 *Status: 🚧 Building (Week 1 Complete)*
 
 **Journey Progress:** ████░░░░░░░░░░░░░░░░ 4%
