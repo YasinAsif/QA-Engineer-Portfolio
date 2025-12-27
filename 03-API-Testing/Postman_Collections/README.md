@@ -115,12 +115,6 @@ pm.test("Returns array of users", function () {
 
 ---
 
-## 📸 Screenshots
-
-*Add screenshots of Postman tests here*
-
----
-
 ## 🎯 Skills Demonstrated
 
 - ✅ RESTful API understanding
