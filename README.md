@@ -184,8 +184,7 @@ pytest test_api.py -v
 ## 📫 Contact
 
 - **GitHub:** [@YasinAsif](https://github.com/YasinAsif)
-- **LinkedIn:** [Your LinkedIn]
-- **Email:** [your.email@example.com]
+- **Email:** muhammadyasinasifofficial@gmail.com
 - **Location:** Pakistan 🇵🇰
 
 ---
