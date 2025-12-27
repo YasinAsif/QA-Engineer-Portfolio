@@ -1,0 +1,7 @@
+# Python API Testing - Dependencies
+# Author: Muhammad Yasin Asif
+
+requests>=2.31.0
+pytest>=7.4.0
+pytest-html>=4.0.0
+jsonschema>=4.19.0

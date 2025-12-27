@@ -1,0 +1,133 @@
+# Configuration Settings for QA Automation Framework
+# Author: Muhammad Yasin Asif
+# Portfolio: QA Engineer Portfolio
+
+# =============================================================================
+# ENVIRONMENT SETTINGS
+# =============================================================================
+environments:
+  dev:
+    base_url: "https://www.saucedemo.com"
+    api_url: "https://api.saucedemo.com"
+    
+  qa:
+    base_url: "https://qa.saucedemo.com"
+    api_url: "https://qa-api.saucedemo.com"
+    
+  staging:
+    base_url: "https://staging.saucedemo.com"
+    api_url: "https://staging-api.saucedemo.com"
+    
+  prod:
+    base_url: "https://www.saucedemo.com"
+    api_url: "https://api.saucedemo.com"
+
+# Default environment
+default_environment: "dev"
+
+# =============================================================================
+# BROWSER SETTINGS
+# =============================================================================
+browser:
+  name: "chrome"  # Options: chrome, firefox, edge, safari
+  headless: false
+  maximize: true
+  implicit_wait: 10
+  explicit_wait: 20
+  page_load_timeout: 30
+  
+  # Chrome-specific options
+  chrome_options:
+    - "--disable-extensions"
+    - "--disable-popup-blocking"
+    - "--disable-infobars"
+    - "--start-maximized"
+    - "--disable-notifications"
+    
+  # Firefox-specific options
+  firefox_options:
+    - "-headless"  # Uncomment for headless mode
+    
+# =============================================================================
+# TEST DATA - CREDENTIALS
+# =============================================================================
+test_users:
+  standard_user:
+    username: "standard_user"
+    password: "secret_sauce"
+    description: "Normal user for happy path testing"
+    
+  locked_out_user:
+    username: "locked_out_user"
+    password: "secret_sauce"
+    description: "User that is locked out - for negative testing"
+    
+  problem_user:
+    username: "problem_user"
+    password: "secret_sauce"
+    description: "User with UI glitches - for bug testing"
+    
+  performance_glitch_user:
+    username: "performance_glitch_user"
+    password: "secret_sauce"
+    description: "User with performance delays"
+    
+  error_user:
+    username: "error_user"
+    password: "secret_sauce"
+    description: "User that triggers errors"
+    
+  visual_user:
+    username: "visual_user"
+    password: "secret_sauce"
+    description: "User with visual differences"
+
+# =============================================================================
+# LOGGING CONFIGURATION
+# =============================================================================
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_name: "test_execution.log"
+  log_dir: "logs"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+# =============================================================================
+# REPORTING SETTINGS
+# =============================================================================
+reporting:
+  screenshots_on_failure: true
+  screenshot_dir: "screenshots"
+  report_dir: "reports"
+  allure_results: "allure-results"
+  html_report: true
+
+# =============================================================================
+# TEST EXECUTION SETTINGS
+# =============================================================================
+execution:
+  parallel_mode: false
+  max_workers: 4
+  retry_failed_tests: 1
+  fail_fast: false
+  
+# =============================================================================
+# TIMEOUTS (in seconds)
+# =============================================================================
+timeouts:
+  short: 5
+  medium: 10
+  long: 30
+  page_load: 60
+  script: 30
+
+# =============================================================================
+# API TESTING SETTINGS
+# =============================================================================
+api:
+  timeout: 30
+  verify_ssl: true
+  default_headers:
+    Content-Type: "application/json"
+    Accept: "application/json"

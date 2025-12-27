@@ -1,0 +1,22 @@
+# Sauce Demo Automation - Dependencies
+# Author: Muhammad Yasin Asif
+# QA Engineer Portfolio
+
+# Core Testing
+selenium>=4.15.0
+pytest>=7.4.0
+webdriver-manager>=4.0.0
+
+# Configuration
+PyYAML>=6.0
+
+# Reporting
+pytest-html>=4.0.0
+allure-pytest>=2.13.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional - for enhanced functionality
+# pytest-xdist>=3.3.0        # Parallel execution
+# pytest-rerunfailures>=12.0  # Retry failed tests
